@@ -38,8 +38,6 @@ I built this project as a hands-on way to practice and understand AWS cloud serv
 * **Networking & Delivery:** Amazon CloudFront, Amazon API Gateway
 * **Security & IAM:** AWS Identity and Access Management (IAM), S3 CORS, OAC
 
----
-
 ## 🎯 Learning Journey (Why I built this)
 
 This project helped me step up from basic AWS tutorials to building a complete, secure, and cost-optimized system. It covers:
