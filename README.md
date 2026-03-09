@@ -50,12 +50,12 @@ This project helped me step up from basic AWS tutorials to building a complete, 
 
 For anyone trying to replicate this architecture, follow this high-level deployment order:
 
-[![Watch the video](https://img.youtube.com/vi/_5tFXJQIzi4/0.jpg)](https://www.youtube.com/watch?v=_5tFXJQIzi4)
+[![Watch the video](https://img.youtube.com/vi/youtubevideoid/0.jpg)](youtubeURL)
 
 ### Phase 1: Storage & Compute (S3 & Lambda)
 1. Clone the repository:
 ```bash
-   git clone https://github.com/yourusername/sl-photo-converter.git
+   git clone https://github.com/Shieliang/SL_Photo_Converter.git
 ```
 
 2. Create S3 Buckets: Create three separate S3 buckets (e.g., frontend-hosting, image-input, image-output). 
@@ -63,8 +63,8 @@ For anyone trying to replicate this architecture, follow this high-level deploym
 3. Configure IAM Roles: Create an IAM Role for your Lambda functions granting them AmazonS3FullAccess (or scoped down read/write permissions) and AWSLambdaBasicExecutionRole.
 
 4. Deploy Lambda Functions: 
-   - Create 'GeneratePresignedURL' and deploy the code from 'lambda/get_presigned_url.py'.
-   - Create 'ProcessFileConverter' and deploy the code from 'lambda/process_image.py'.
+   - Create 'GeneratePresignedURL' and deploy the code from 'lambda/GeneratePresignedURL.py'.
+   - Create 'ProcessFileConverter' and deploy the code from 'lambda/ProcessFileConverter.py'.
 
 5. Set up Event Triggers: In the 'image-input' S3 bucket, create an Event Notification that triggers the 'ProcessFileConverter' Lambda whenever a new object is created (s3:ObjectCreated:*).
 
